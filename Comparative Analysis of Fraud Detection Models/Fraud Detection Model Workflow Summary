@@ -1,0 +1,36 @@
+## Fraud Detection Model Workflow Summary
+
+1. **Import Libraries**
+   - `pandas` for data handling.
+   - `numpy` for numerical operations.
+   - `sklearn` for machine learning tools.
+   - `matplotlib` for data visualization.
+
+2. **Load Dataset**
+   - Data is loaded from a remote URL using `pandas.read_csv`.
+
+3. **Initial Data Exploration**
+   - Initial examination using `data.head()` and `data.tail()` to understand dataset structure.
+
+4. **Data Preparation**
+   - Features (`X`) and target variable (`y`) are defined.
+   - `fraud` column is the target, while others are features.
+
+5. **Data Splitting**
+   - Dataset is split into training and test sets.
+   - `train_test_split` is used, with a test size of 20%.
+
+6. **Model Initialization**
+   - Decision Tree Classifier initialized with a maximum depth of 3.
+   - Limits complexity and overfitting of the model.
+
+7. **Model Training**
+   - Model is trained using the training set (`X_train`, `y_train`).
+
+8. **Prediction and Evaluation**
+   - Model predictions made on the test set.
+   - Evaluation using accuracy, confusion matrix, and classification report.
+
+9. **Visualization**
+   - Decision tree visualized using `matplotlib` and `sklearn.tree.plot_tree`.
+   - Helps in understanding the decision-making process of the model.
